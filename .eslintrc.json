@@ -1,9 +1,17 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "react/jsx-closing-tag-location": [true, "tag-aligned"],
-    "multiline": ["require"],
-    "react/jsx-equals-spacing": [2, "always"],
-    "react/jsx-newline": [true, { "prevent": false, "allowMultilines": true}]
+    "react/jsx-closing-tag-location": [2, "tag-aligned"],
+    "react/jsx-wrap-multilines": [2, {
+      "declaration": "parens",
+      "assignment": "parens",
+      "return": "parens",
+      "arrow": "parens",
+      "condition": "ignore",
+      "logical": "ignore",
+      "prop": "ignore"
+    }],
+    "react/jsx-equals-spacing": [2, "never"],
+    "react/jsx-newline": [2, { "prevent": true, "allowMultilines": true}]
   }
 }
