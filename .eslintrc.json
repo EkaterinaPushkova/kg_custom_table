@@ -1,3 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "react/jsx-closing-tag-location": [true, "tag-aligned"],
+    "multiline": ["require"],
+    "react/jsx-equals-spacing": [2, "always"],
+    "react/jsx-newline": [true, { "prevent": false, "allowMultilines": true}]
+  }
 }
